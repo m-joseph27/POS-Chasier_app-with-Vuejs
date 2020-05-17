@@ -12,7 +12,6 @@ Chasier App is an application to manage purchasing, build with Vue.js.
 		<li><a href="#how-to-run">How To Run</a></li>
 		<li><a href="#screenshoot">Screenshoot</a></li>
 		<li><a href="#related-project">Related Project</a></li>
-		<li class="app"><a href="http://bit.ly/hayuu-cafe" target="_blank">go to app</a></li>
 	</ul>
 </div>
 
