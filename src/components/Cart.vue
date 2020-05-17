@@ -28,75 +28,11 @@
           <p>Rp.15.000,-</p>
         </div>
       </div>
-      <div class="content">
-        <div class="content-img"></div>
-        <div class="content-name">
-        <div class="name-item">
-          <p>Coffe Late</p>
-        </div>
-          <div class="item">
-            <button>-</button>
-            <button class="number">1</button>
-            <button>+</button>
-          </div>
-        </div>
-        <div class="item-price">
-          <p>Rp.15.000,-</p>
-        </div>
-      </div>
-      <div class="content">
-        <div class="content-img"></div>
-        <div class="content-name">
-        <div class="name-item">
-          <p>Coffe Late</p>
-        </div>
-          <div class="item">
-            <button>-</button>
-            <button class="number">1</button>
-            <button>+</button>
-          </div>
-        </div>
-        <div class="item-price">
-          <p>Rp.15.000,-</p>
-        </div>
-      </div>
-      <div class="content">
-        <div class="content-img"></div>
-        <div class="content-name">
-        <div class="name-item">
-          <p>Coffe Late</p>
-        </div>
-          <div class="item">
-            <button>-</button>
-            <button class="number">1</button>
-            <button>+</button>
-          </div>
-        </div>
-        <div class="item-price">
-          <p>Rp.15.000,-</p>
-        </div>
-      </div>
-      <div class="content">
-        <div class="content-img"></div>
-        <div class="content-name">
-        <div class="name-item">
-          <p>Coffe Late</p>
-        </div>
-          <div class="item">
-            <button>-</button>
-            <button class="number">1</button>
-            <button>+</button>
-          </div>
-        </div>
-        <div class="item-price">
-          <p>Rp.15.000,-</p>
-        </div>
-      </div>
     </div>
     <div class="total">
       <div class="price">
         <div class="total-price">Total :</div>
-        <div class="price-number">Rp. 105.000*</div>
+        <div class="price-number">Rp. 15.000*</div>
       </div>
       <div class="tax">
         <p>*Belum termasuk ppn</p>
@@ -144,6 +80,7 @@ export default {
     display: flex;
     width: 100%;
     height: 60px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.185);
     .btn-back{
       display: flex;
       align-items: center;

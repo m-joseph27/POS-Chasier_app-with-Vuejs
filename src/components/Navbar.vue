@@ -40,7 +40,7 @@ export default {
   top: 0;
   width: 100%;
   height: 60px;
-  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.185);
   z-index: 6;
   background-color: #fff;
   // background-color: black;
