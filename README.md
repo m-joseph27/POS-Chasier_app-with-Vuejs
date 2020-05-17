@@ -47,20 +47,16 @@ Chasier App is an application to manage purchasing, build with Vue.js.
 		<img class="img-demo" src="https://github.com/m-joseph27/POS-Chasier_app-with-Vuejs/blob/master/src/assets/screenshot/login.png">  
     </div>
     <div class="items">
-    	<h4 class="title-demo">Home Page</h4>
-		<img class="img-demo" src="https://user-images.githubusercontent.com/37394664/78219854-99386280-74ea-11ea-86bd-50ce43a3d18e.png">  
+    	<h4 class="title-demo">Register Page</h4>
+		<img class="img-demo" src="https://github.com/m-joseph27/POS-Chasier_app-with-Vuejs/blob/master/src/assets/screenshot/register.png">  
     </div>
     <div class="items">
-    	<h4 class="title-demo">History</h4>
-		<img class="img-demo" src="https://user-images.githubusercontent.com/37394664/78219865-9f2e4380-74ea-11ea-8763-8fce7ff5300a.png">  
+    	<h4 class="title-demo">Home</h4>
+		<img class="img-demo" src="https://github.com/m-joseph27/POS-Chasier_app-with-Vuejs/blob/master/src/assets/screenshot/home.png">  
     </div>
     <div class="items">
-    	<h4 class="title-demo">Add Product</h4>
-		<img class="img-demo" src="https://user-images.githubusercontent.com/37394664/78219879-a48b8e00-74ea-11ea-820c-4a7356c6f3c9.png">  
-    </div>
-    <div class="items">
-    	<h4 class="title-demo">Add Category</h4>
-		<img class="img-demo" src="https://user-images.githubusercontent.com/37394664/78219872-a1909d80-74ea-11ea-8a9e-6152127c8f41.png">  
+    	<h4 class="title-demo">Cart</h4>
+		<img class="img-demo" src="https://github.com/m-joseph27/POS-Chasier_app-with-Vuejs/blob/master/src/assets/screenshot/cart.png">  
     </div>
 </div>
 </section>
