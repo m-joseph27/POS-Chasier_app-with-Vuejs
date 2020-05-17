@@ -44,7 +44,7 @@ Chasier App is an application to manage purchasing, build with Vue.js.
 <div class="demo">
     <div class="items">
     	<h4 class="title-demo">Login Page</h4>
-		<img class="img-demo" src="https://user-images.githubusercontent.com/37394664/78219692-3d6dd980-74ea-11ea-8c3a-a032edd3f864.png">  
+		<img class="img-demo" src="https://github.com/m-joseph27/POS-Chasier_app-with-Vuejs/blob/master/src/assets/screenshot/login.png">  
     </div>
     <div class="items">
     	<h4 class="title-demo">Home Page</h4>
@@ -68,6 +68,5 @@ Chasier App is an application to manage purchasing, build with Vue.js.
 <section id="related-project">
 	
 ## Related Project
-* [`Hayuu-Cafe-Backend`](https://github.com/misrudin/NodeWithExpress-backend-PointOfSales.git)
-* [`Hayuu-Cafe-Mobile`](https://github.com/misrudin/PosReactNative.git)
+* [`Hayuu-Cafe-Backend`](https://github.com/m-joseph27/Chasier_app-API-with-Expressjs.git)
 </section>
