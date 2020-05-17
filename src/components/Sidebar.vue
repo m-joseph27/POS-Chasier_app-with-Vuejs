@@ -12,7 +12,7 @@
       </router-link>
       <router-link to="/login">
         <div class="exit">
-          <img src="../assets/img/icons8-export-48.png" class="img-text">
+          <img src="../assets/img/icons8-exit-52.png" width="30px" height="30px" class="img-text">
         </div>
       </router-link>
     </div>
@@ -41,7 +41,7 @@ export default {
 }
 .fork-menu{
   /* background-color: royalblue; */
-  background-image: url('../assets/img/dish.png');
+  background-image: url('../assets/img/fork.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@ export default {
 }
 .history{
   /* background-color: red; */
-  background-image: url('../assets/img/history.png');
+  background-image: url('../assets/img/clipboard.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,6 +75,7 @@ export default {
   /* background-color: burlywood; */
   width: 40px;
   height: 60px;
-  margin-top: 25px;
+  margin-top: 240px;
+  transform: rotate(180deg);
 }
 </style>

@@ -7,7 +7,7 @@
       <div class="name-cart">
         <h4>Cart</h4>
         <div class="selected">
-          <div class="selected-item">0</div>
+          <div class="selected-item">1</div>
         </div>
       </div>
     </div>
@@ -16,7 +16,7 @@
         <div class="content-img"></div>
         <div class="content-name">
         <div class="name-item">
-          <p>Coffe Late</p>
+          <p>Expresso</p>
         </div>
           <div class="item">
             <button>-</button>
@@ -133,7 +133,7 @@ export default {
     // margin-top: 10px;
     .content-img{
       background-color: steelblue;
-      background-image: url('../assets/img/hotdrink.jpeg');
+      background-image: url('../assets/img/expresso.jpg');
       background-size: cover;
       border-radius: 5px;
       width: 25%;
