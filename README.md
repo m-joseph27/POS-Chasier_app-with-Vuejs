@@ -1,8 +1,8 @@
 <section id="home">
 	
-<h1 align="center">Hayuu Cafe Front-end</h1>
+<h1 align="center">Chasier App Front-end</h1>
 
-Hayuu cafe is an application to manage sales at hayuu cafe, build with ReactJS.
+Chasier App is an application to manage purchasing, build with Vue.js.
 </section>
 
 #### Table Of Content
@@ -20,21 +20,20 @@ Hayuu cafe is an application to manage sales at hayuu cafe, build with ReactJS.
 	
 ## Requirements
 * [`npm`](https://www.npmjs.com/get-npm)
-* [`React Js`](https://reactjs.org/docs/getting-started.html)
-* [`react-bootsrap`](https://react-bootstrap.github.io)
-* [`sweetalert`](https://sweetalert.js.org/)
+* [`Vue.js`](https://vuejs.org/)
+* [`vue-cli-service`](https://cli.vuejs.org/)
 </section>
 
 <section id="how-to-run">
 	
 ## How To Run
 1. Open your terminal or command prompt
-2. Type `git clone https://github.com/misrudin/Front-end-PointOfSales.git`
+2. Type `git clone https://github.com/m-joseph27/POS-Chasier_app-with-Vuejs.git`
 3. Open the folder and type `npm install` for install dependencies
 	#### Setup .env
 		Open .env file on your favorite code editor, and copy paste this code below :
 		```
-		REACT_APP_URL="http://localhost:4001/api/v1/"
+		VUE_APP_URL="http://localhost:2727/api/v1/"
 		```
 4. type `npm start` for run dependencies
 </section>
