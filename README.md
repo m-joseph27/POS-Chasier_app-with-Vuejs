@@ -1,3 +1,17 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/HiRahmat-Dev/food-cashier-vuejs)
+![GitHub contributors](https://img.shields.io/github/contributors/HiRahmat-Dev/food-cashier-vuejs)
+![GitHub stars](https://img.shields.io/github/stars/HiRahmat-Dev/food-cashier-vuejs?style=social)
+![GitHub forks](https://img.shields.io/github/forks/HiRahmat-Dev/food-cashier-vuejs?style=social)
+![Tweet](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FHiRahmat-Dev%2Ffood-cashier-vuejs
+)
+
+<p align="center">
+  <img height="100" src="https://vuejs.org/images/logo.png">
+</p>
+<h4 align="center">
+  Built with Vue Js.
+</h4>
+
 <section id="home">
 	
 <h1 align="center">Chasier App Front-end</h1>
