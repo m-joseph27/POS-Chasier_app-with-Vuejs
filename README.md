@@ -77,6 +77,6 @@ Chasier App is an application to manage purchasing, build with Vue.js.
 <section id="related-project">
 	
 ## Related Project
-* [`Chasier_app-Backend`](https://github.com/m-joseph27/Chasier_app-API-with-Expressjs.git)
+* [`Chasier_app-Backend`](https://github.com/m-joseph27/Chasier_app-API.git)
 </section>
 
