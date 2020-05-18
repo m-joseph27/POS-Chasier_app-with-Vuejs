@@ -26,7 +26,6 @@ Chasier App is an application to manage purchasing, build with Vue.js.
 		<li><a href="#how-to-run">How To Run</a></li>
 		<li><a href="#screenshoot">Screenshoot</a></li>
 		<li><a href="#related-project">Related Project</a></li>
-		<li><a href="#contributor">Contributor</a></li>
 	</ul>
 </div>
 
@@ -81,16 +80,3 @@ Chasier App is an application to manage purchasing, build with Vue.js.
 * [`Chasier_app-Backend`](https://github.com/m-joseph27/Chasier_app-API-with-Expressjs.git)
 </section>
 
-## Contributor
-<center>
-  <table>
-    <tr>
-      <td align="center">
-        <a href="https://github.com/m-joseph27">
-          <img width="150" src="https://avatars2.githubusercontent.com/u/60948526?s=400&u=c258f85ec35ccfda6ce3911dae79d45e335088b3&v=4" alt="Muhammad Yusuf"><br/>
-          <b>Muhammad Yusuf</b>
-        </a>
-      </td>
-    </tr>
-  </table>
-</center>
