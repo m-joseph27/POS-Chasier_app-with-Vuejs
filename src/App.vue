@@ -9,7 +9,7 @@ export default {
   watch: {
     $route: {
       handler: (to) => {
-        document.title = to.meta.title || 'Aplhabet.id';
+        document.title = to.meta.title || 'Chasier app | Aplication for chasier';
       },
       immediate: true,
     },

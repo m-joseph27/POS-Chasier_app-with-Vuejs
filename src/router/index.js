@@ -12,29 +12,41 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
+    meta: {
+      title: 'Chasier App',
+    },
   },
   {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    component: () => import('../views/About.vue'),
+    meta: {
+      title: 'About',
+    },
   },
   {
     path: '/history',
     name: 'Histroy',
     component: History,
+    meta: {
+      title: 'History',
+    },
   },
   {
     path: '/login',
     name: 'Login',
     component: Login,
+    meta: {
+      title: 'Login to Your Account | Most Populer Chasier Aplication',
+    },
   },
   {
     path: '/register',
     name: 'Register',
     component: Register,
+    meta: {
+      title: 'Regist Your Account | Most Populer Chasier Aplication',
+    },
   },
 ];
 
