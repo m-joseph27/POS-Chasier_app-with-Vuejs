@@ -3,7 +3,8 @@
     <navbar @cart-clicked="showModal" />
     <sidebar @modalAdd="modalAdd"/>
     <Menu/>
-    <cart @btn-back-clicked="removeModal"/>
+    <cart @btn-back-clicked="removeModal"
+          @addModal="addReceipt"/>
     <modal @closeModal="closeModal"/>
     <checkout @closeReceipt="closeReceipt"/>
   </div>
@@ -15,6 +16,7 @@ import Sidebar from '../components/Sidebar.vue';
 import Menu from '../components/Menu.vue';
 import Cart from '../components/Cart.vue';
 import Modal from '../components/Modal.vue';
+import Checkout from '../components/Checkout.vue';
 
 export default {
   name: 'Home',
@@ -24,6 +26,7 @@ export default {
     Menu,
     Cart,
     Modal,
+    Checkout,
   },
   methods: {
     showModal() {
@@ -32,12 +35,13 @@ export default {
     modalAdd() {
       document.querySelector('.modal-parent').classList.add('modal-active');
     },
-    // addReceipt() {
-    //   document.querySelector('.checkout-master').classList.add('checkout-active');
-    // },
-    // closeReceipt() {
-    //   document.querySelector('.checkout-master').classList.remove('checkout-active');
-    // },
+    addReceipt() {
+      console.log(document.querySelector('.checkout-master'));
+      document.querySelector('.checkout-master').classList.add('checkout-active');
+    },
+    closeReceipt() {
+      document.querySelector('.checkout-master').classList.remove('checkout-active');
+    },
     closeModal() {
       document.querySelector('.modal-parent').classList.remove('modal-active');
     },

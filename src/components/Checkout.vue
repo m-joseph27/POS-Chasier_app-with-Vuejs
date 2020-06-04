@@ -22,8 +22,15 @@
           </div>
         </div>
       </div>
-      <div class="body"></div>
-      <div class="total"><p>Total :</p><p>Rp.115.500*</p></div>
+      <div class="body">
+        <div class="leftSide">
+          <p>Expresso 1x</p>
+        </div>
+        <div class="rightSide">
+          <p>Rp. 15.000</p>
+        </div>
+      </div>
+      <div class="total"><p>Total :</p><p>Rp.15.000*</p></div>
       <div class="payment">Payment : Cash</div>
       <div class="btn-checkout">
         <div class="btn-print">Print</div>
@@ -53,6 +60,9 @@ export default {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 20;
+  &.checkout-active{
+    visibility: visible;
+  }
   .checkout{
     display: flex;
     flex-direction: column;
@@ -122,9 +132,27 @@ export default {
       }
     }
     .body{
-      background-color: royalblue;
+      // background-color: rgb(170, 183, 223);
       width: 100%;
       height: 40%;
+      display: flex;
+      text-align: left;
+      padding-left: 20px;
+      box-sizing: border-box;
+      p{
+        font-weight: 600;
+        font-size: 16px;
+      }
+      .leftSide{
+        // background-color: #F24F8A;
+        width: 65%;
+        height: 100%;
+      }
+      .rightSide{
+        // background-color: rgb(84, 242, 79);
+        width: 45%;
+        height: 100%;
+      }
     }
     .total{
       background-color: white;
@@ -141,6 +169,7 @@ export default {
       text-align: left;
       padding-left: 10px;
       font-family: airbnbmedium;
+      padding-left: 20px;
     }
     .btn-checkout{
       // background-color: tan;
