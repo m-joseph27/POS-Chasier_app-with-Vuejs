@@ -37,7 +37,7 @@ export default {
       menu: [],
       currentPage: 1,
       totalPage: [],
-      url: 'localhost:2727/api/v1/menu?page=',
+      url: 'localhost:2000/api/v1/menu?page=',
     };
   },
   methods: {
@@ -46,7 +46,7 @@ export default {
     },
     pages(id) {
       this.currentPage = 0 + id;
-      axios.get(`http://localhost:2727/api/v1/menu?page=${this.currentPage}`)
+      axios.get(`http://localhost:2000/api/v1/menu?page=${this.currentPage}`)
         .then((res) => {
           // eslint-disable-next-line prefer-destructuring
           this.menu = res.data.result[2];
@@ -58,7 +58,7 @@ export default {
       } else {
         this.currentPage += 1;
       }
-      axios.get(`http://localhost:2727/api/v1/menu?page=${this.currentPage}`)
+      axios.get(`http://localhost:2000/api/v1/menu?page=${this.currentPage}`)
         .then((res) => {
           // eslint-disable-next-line prefer-destructuring
           this.menu = res.data.result[2];
@@ -75,7 +75,7 @@ export default {
       } else {
         this.currentPage -= 1;
       }
-      axios.get(`http://localhost:2727/api/v1/menu?page=${this.currentPage}`)
+      axios.get(`http://localhost:2000/api/v1/menu?page=${this.currentPage}`)
         .then((res) => {
           // eslint-disable-next-line prefer-destructuring
           this.menu = res.data.result[2];
@@ -88,7 +88,7 @@ export default {
     },
   },
   mounted() {
-    axios.get(`http://localhost:2727/api/v1/menu?page=${this.currentPage}`)
+    axios.get(`http://localhost:2000/api/v1/menu?page=${this.currentPage}`)
       .then((res) => {
         // eslint-disable-next-line prefer-destructuring
         this.menu = res.data.result[2];

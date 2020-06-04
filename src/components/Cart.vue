@@ -86,6 +86,9 @@ export default {
       align-items: center;
       width: 10%;
       height: 100%;
+      img{
+        transform: translate3d(90deg);
+      }
     }
     .name-cart{
       display: flex;
