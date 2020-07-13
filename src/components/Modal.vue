@@ -25,14 +25,11 @@ export default {
   visibility: hidden;
   opacity: 0;
   transition: ease 0.50s;
-  // background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100vw;
   height: 100vh;
   z-index: 20;
-  top: 10%;
-  left: 30%;
-  right: 30%;
   &.modal-active{
     visibility: visible;
     opacity: 1;
@@ -85,6 +82,7 @@ export default {
         height: 40px;
         font-family: airbnbmedium;
         border-radius: 3px;
+        margin: 0 10px;
         color: white;
       }
       .cancel{

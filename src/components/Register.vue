@@ -70,7 +70,7 @@ export default {
 
   .login{
     // background-color: olive;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))
+    background-image:linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.541))
     ,url('../assets/img/register-min.jpg');
     background-size: cover;
     background-position: center;
