@@ -110,31 +110,33 @@ export default {
   padding-left:180px;
   padding-top: 80px;
   .all-card{
-    // background-color: sandybrown;
     display: flex;
     flex-wrap: wrap;
     .parent-card{
-      // background-color: violet;
       width: 250px;
       height: 200px;
       text-align: left;
       margin: 10px;
       cursor: pointer;
+      overflow: hidden;
       &:hover{
-        transform: scale(1.1);
+        // transform: scale(1.1);
         transition: ease .2s;
       }
       transition: ease .2s;
     }
     .card-image{
       background-color: salmon;
-      // background-image: url('../assets/img/espresso.jpeg');
       background-size: cover;
       background-position: center;
       width: 100%;
       height: 80%;
       border-radius: 10px 10px 0 0;
-      overflow: hidden;
+      transition: ease-out .3s;
+      &:hover{
+        transform: scale(1.1);
+        transition: ease-out .3s;
+      }
       img{
         object-fit: cover;
         height: 100%;
@@ -142,12 +144,10 @@ export default {
       }
     }
     .card-label{
-      // background-color: slateblue;
       width: 100%;
       height: 10%;
     }
     .card-price{
-      // background-color: sandybrown;
       width: 100%;
       height: 10%;
       font-weight: bold;
