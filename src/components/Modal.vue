@@ -6,7 +6,7 @@
           </div>
           <div class="content-body"></div>
           <div class="content-footer">
-            <button class="cancel" @click="$emit('closeModal')">Cancel</button>
+            <button class="cancel">Cancel</button>
             <button class="add">Add</button>
           </div>
         </div>

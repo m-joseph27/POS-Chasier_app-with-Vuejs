@@ -120,7 +120,6 @@ export default {
       cursor: pointer;
       overflow: hidden;
       &:hover{
-        // transform: scale(1.1);
         transition: ease .2s;
       }
       transition: ease .2s;
