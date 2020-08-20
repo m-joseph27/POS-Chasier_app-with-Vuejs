@@ -36,7 +36,7 @@
     <div class="total">
       <div class="price">
         <div class="total-price">Total :</div>
-        <div class="price-number">{{}}</div>
+        <div class="price-number"> Rp. total </div>
       </div>
       <div class="tax">
         <p>*Belum termasuk ppn</p>
