@@ -13,7 +13,7 @@ export default new Vuex.Store({
   mutations: {
     selectedItem(state, { item, count }) {
       const items = state.selectedItem
-        .find((clicked) => clicked.item.id_menu);
+        .find((clicked) => clicked.item.id_menu === item.id_menu);
       if (!items) {
         state.selectedItem.push({ item, count });
       }
@@ -33,7 +33,8 @@ export default new Vuex.Store({
     },
   },
 
-  getter: {
+  getters: {
+    countCart: (state) => state.selectedItem.length,
   },
 
 });

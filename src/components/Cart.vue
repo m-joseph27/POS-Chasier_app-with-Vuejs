@@ -7,16 +7,20 @@
       <div class="name-cart">
         <h4>Cart</h4>
         <div class="selected">
-          <div class="selected-item">1</div>
+          <div class="selected-item">
+            <p>{{ countCart }}</p>
+          </div>
         </div>
       </div>
     </div>
     <div class="content-wrap">
-      <div class="content">
-        <div class="content-img"></div>
+      <div v-for="item in selectedItem" :key="item.item.id_menu" class="content">
+        <div class="content-img">
+          <img :src="item.item.menu_img">
+        </div>
         <div class="content-name">
         <div class="name-item">
-          <p>Expresso</p>
+          <p>{{ item.item.menu_name }}</p>
         </div>
           <div class="item">
             <button>-</button>
@@ -25,20 +29,20 @@
           </div>
         </div>
         <div class="item-price">
-          <p>Rp.15.000,-</p>
+          <p>{{ item.item.price }}</p>
         </div>
       </div>
     </div>
     <div class="total">
       <div class="price">
         <div class="total-price">Total :</div>
-        <div class="price-number">Rp. 15.000*</div>
+        <div class="price-number">{{}}</div>
       </div>
       <div class="tax">
         <p>*Belum termasuk ppn</p>
       </div>
       <div class="cart-btn">
-        <button class="ok" @click="$emit('addModal')">Check Out</button>
+        <button class="ok">Check Out</button>
         <button class="cancel">Cancel</button>
       </div>
     </div>
@@ -46,7 +50,22 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
+  name: 'Cart',
+  computed: {
+    selectedItem() {
+      return this.$store.state.selectedItem;
+    },
+    ...mapGetters([
+      'countCart',
+    ]),
+  },
+
+  methods: {
+
+  },
 
 };
 </script>
@@ -68,7 +87,6 @@ export default {
   flex-direction: column;
   right: -400px;
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.9);
-  // background-color: black;
   width: 400px;
   height: 100vh;
   z-index: 10;
@@ -115,6 +133,9 @@ export default {
           text-align: center;
           color: white;
           padding-top: 1px;
+          p{
+            font-weight: bold;
+          }
         }
       }
     }
@@ -127,30 +148,26 @@ export default {
     overflow-y: scroll;
   }
   .content{
-    // background-color: seagreen;
     display: flex;
     width: 100%;
-    // padding-top: 20px;
     padding-bottom: 20px;
-    // padding-top: 20px;
-    // margin-top: 10px;
     .content-img{
       background-color: steelblue;
-      background-image: url('../assets/img/expresso.jpg');
-      background-size: cover;
-      border-radius: 5px;
       width: 25%;
       height: 80px;
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
     }
     .content-name{
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      // background-color: goldenrod;
       width: 50%;
       height: 80px;
       .name-item{
-        // background-color: indianred;
         width: 100%;
         height: 30px;
         text-align: left;
@@ -242,7 +259,7 @@ export default {
         background-color: #57CAD5;
       }
       .cancel{
-        background-color: #F24F8A;;
+        background-color: #F24F8A;
       }
     }
   }
