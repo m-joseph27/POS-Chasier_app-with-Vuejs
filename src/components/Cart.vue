@@ -23,20 +23,22 @@
           <p>{{ item.item.menu_name }}</p>
         </div>
           <div class="item">
-            <button>-</button>
-            <button class="number">1</button>
-            <button>+</button>
+            <button @click="decerement(item)" >-</button>
+            <button class="number">{{ item.count }}</button>
+            <button @click="incerement(item)">+</button>
           </div>
         </div>
         <div class="item-price">
-          <p>{{ item.item.price }}</p>
+          <p>Rp: <span>{{ item.item.price * item.count}}</span>
+          </p>
         </div>
       </div>
     </div>
     <div class="total">
       <div class="price">
         <div class="total-price">Total :</div>
-        <div class="price-number"> Rp. total </div>
+        <div class="price-number"> Rp: <span></span>
+        </div>
       </div>
       <div class="tax">
         <p>*Belum termasuk ppn</p>
@@ -54,7 +56,16 @@ import { mapGetters } from 'vuex';
 
 export default {
   name: 'Cart',
+  data() {
+    return {
+      total: 0,
+      getOrder: [],
+    };
+  },
   computed: {
+    getTotal() {
+      return this.$store.total;
+    },
     selectedItem() {
       return this.$store.state.selectedItem;
     },
@@ -64,7 +75,12 @@ export default {
   },
 
   methods: {
-
+    incerement(data) {
+      this.$store.commit('INCEREMENT', data);
+    },
+    decerement(data) {
+      this.$store.commit('DECEREMENT', data);
+    },
   },
 
 };
