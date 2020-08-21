@@ -13,7 +13,9 @@
         </div>
         <div class="cart" @click="$emit('cart-clicked')">
           <img src="../assets/img/icons8-shopping-cart-64.png" width="50px" height="45px">
-          <div class="item-cart"><p>0</p></div>
+          <div class="item-cart">
+            <p>{{ countCart }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -21,7 +23,15 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
+  name: 'Navbar',
+  computed: {
+    ...mapGetters([
+      'countCart',
+    ]),
+  },
 };
 </script>
 
@@ -85,6 +95,7 @@ export default {
         p{
           color: white;
           font-family: airbnbmedium;
+          font-weight: bold;
         }
       }
       &:active{
