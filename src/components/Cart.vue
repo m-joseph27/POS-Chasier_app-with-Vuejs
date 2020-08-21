@@ -14,6 +14,10 @@
       </div>
     </div>
     <div class="content-wrap">
+      <div v-if="isEmpty" class="emptyContent">
+        <img src="../assets/img/cart.png" alt="cart">
+        <header>Your Cart Is Empty</header>
+      </div>
       <div v-for="item in selectedItem" :key="item.item.id_menu" class="content">
         <div class="content-img">
           <img :src="item.item.menu_img">
@@ -63,8 +67,8 @@ export default {
     };
   },
   computed: {
-    getTotal() {
-      return this.$store.total;
+    isEmpty() {
+      return this.selectedItem.length === 0;
     },
     selectedItem() {
       return this.$store.state.selectedItem;
@@ -161,6 +165,20 @@ export default {
     padding-left: 20px;
     padding-top: 20px;
     overflow-y: scroll;
+    .emptyContent{
+      width: 100%;
+      height: 100%;
+      img{
+        object-fit: contain;
+        height: 80%;
+        width: 80%;
+      }
+      header{
+        font-family: airbnbmedium;
+        font-weight: bold;
+        color: #F24F8A;
+      }
+    }
   }
   .content{
     display: flex;
