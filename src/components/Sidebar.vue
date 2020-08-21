@@ -8,7 +8,7 @@
         <div class="history"></div>
       </router-link>
       <router-link to="/">
-        <div class="add" @click="$emit('modalAdd',$event.target)"></div>
+        <div @click="$emit('modal-add')" class="add"></div>
       </router-link>
       <router-link to="/login">
         <div class="exit">
@@ -26,6 +26,12 @@ export default {
 </script>
 
 <style scoped>
+.sidebar.sidebarActive{
+  visibility: visible;
+  opacity: 1;
+  transition: ease .5s;
+}
+
 .sidebar{
   background-color: white;
   width:85px;
@@ -38,9 +44,11 @@ export default {
   position: fixed;
   z-index: 4;
   top: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: ease .5s;
 }
 .fork-menu{
-  /* background-color: royalblue; */
   background-image: url('../assets/img/fork.png');
   background-size: contain;
   background-position: center;
@@ -51,7 +59,6 @@ export default {
   margin-bottom: 25px;
 }
 .history{
-  /* background-color: red; */
   background-image: url('../assets/img/clipboard.png');
   background-size: contain;
   background-position: center;
@@ -62,7 +69,6 @@ export default {
   cursor: pointer;
 }
 .add{
-  /* background-color: gold; */
   background-image: url('../assets/img/add.png');
   background-size: contain;
   background-position: center;
@@ -72,7 +78,6 @@ export default {
   cursor: pointer;
 }
 .exit{
-  /* background-color: burlywood; */
   width: 40px;
   height: 60px;
   margin-top: 240px;

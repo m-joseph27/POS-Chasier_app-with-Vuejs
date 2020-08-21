@@ -1,11 +1,13 @@
 <template>
   <div>
-    <navbar @cart-clicked="showModal" />
-    <sidebar @modalAdd="modalAdd"/>
+    <navbar @cart-clicked="showModal"
+            @menu-clicked="sidebarModal"/>
+    <sidebar @modal-add="addProduct"/>
     <Menu/>
     <cart @btn-back-clicked="removeModal"
           @addModal="addReceipt"/>
-    <modal @closeModal="closeModal"/>
+    <modal @closeModal="closeModal"
+            @close-clicked="closemodalAdd"/>
     <checkout @closeReceipt="closeReceipt"/>
   </div>
 </template>
@@ -29,14 +31,19 @@ export default {
     Checkout,
   },
   methods: {
+    sidebarModal() {
+      document.querySelector('.sidebar').classList.toggle('sidebarActive');
+    },
     showModal() {
       document.querySelector('.cart-parent').classList.add('parent-active');
     },
-    modalAdd() {
+    addProduct() {
       document.querySelector('.modal-parent').classList.add('modal-active');
     },
+    closemodalAdd() {
+      document.querySelector('.modal-parent').classList.remove('modal-active');
+    },
     addReceipt() {
-      console.log(document.querySelector('.checkout-master'));
       document.querySelector('.checkout-master').classList.add('checkout-active');
     },
     closeReceipt() {
@@ -47,7 +54,6 @@ export default {
     },
     removeModal() {
       document.querySelector('.cart-parent').classList.remove('parent-active');
-      // document.querySelector('.modal-parent').classList.remove('parent-active');
     },
   },
 };

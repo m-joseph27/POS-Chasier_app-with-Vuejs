@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="navbar">
-      <div class="menu">
+      <div @click="$emit('menu-clicked')" class="menu">
         <img src="../assets/img/list.png" width="40px" height="40px">
       </div>
       <div class="nav-name">
@@ -53,14 +53,12 @@ export default {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.185);
   z-index: 6;
   background-color: #fff;
-  // background-color: black;
   .menu{
-    // background-color: blanchedalmond;
     width: 50px;
     height: 100%;
+    cursor: pointer;
   }
   .nav-name{
-    // background-color: blue;
     width: 400px;
     height: 100%;
     display: flex;
@@ -72,21 +70,20 @@ export default {
     }
   }
   .nav-option{
-    // background-color: brown;
     width: 200px;
     height: 100%;
     display: flex;
     justify-content: space-around;
     .search{
-      // background-color: cadetblue;
       width: 50px;
       height: 100%;
+      cursor: pointer;
     }
     .cart{
-      // background-color: chocolate;
       width: 70px;
       height: 100%;
       display: flex;
+      cursor: pointer;
       .item-cart{
         background-color: deepskyblue;
         width: 35px;

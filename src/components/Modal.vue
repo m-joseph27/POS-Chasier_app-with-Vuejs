@@ -6,7 +6,7 @@
           </div>
           <div class="content-body"></div>
           <div class="content-footer">
-            <button class="cancel">Cancel</button>
+            <button @click="$emit('close-clicked')" class="cancel">Cancel</button>
             <button class="add">Add</button>
           </div>
         </div>
@@ -35,10 +35,9 @@ export default {
     opacity: 1;
     top: 0;
     left: 0;
-    transform: rotate3d(360deg);
+    transition: ease 0.50s;
   }
   .modal-content{
-    // background-color: salmon;
     width: 600px;
     height: 500px;
     border-radius: 10px;

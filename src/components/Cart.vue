@@ -2,7 +2,7 @@
   <div class="cart-parent">
     <div class="name">
       <div class="btn-back" @click="$emit('btn-back-clicked')">
-        <img src="../assets/img/icons8-back-to-40.png" width="40px" height="40px">
+        <img src="../assets/img/icons8-back-to-40.png" alt="back">
       </div>
       <div class="name-cart">
         <h4>Cart</h4>
@@ -102,17 +102,16 @@ export default {
     .btn-back{
       display: flex;
       align-items: center;
-      width: 10%;
+      width: 15%;
       height: 100%;
       img{
-        transform: translate3d(90deg);
+        transform: rotate(180deg);
       }
     }
     .name-cart{
       display: flex;
       justify-content: center;
       align-items: center;
-      // background-color: salmon;
       width: 90%;
       height: 100%;
       top: 0;
@@ -175,7 +174,6 @@ export default {
         padding-left: 10px;
       }
       .item{
-        // background-color: indigo;
         width: 100%;
         height: 30px;
         display: flex;
@@ -195,7 +193,6 @@ export default {
       }
     }
     .item-price{
-      // background-color: hotpink;
       width: 25%;
       height: 80px;
       display: flex;
@@ -206,24 +203,20 @@ export default {
     }
   }
   .total{
-    // background-color: silver;
     width: 100%;
     height: 200px;
     .price{
-      // background-color: tan;
       width: 100%;
       height: 25px;
       display: flex;
       font-family: airbnb;
       .total-price{
-        // background-color: yellowgreen;
         text-align: left;
         padding-left: 10px;
         width: 60%;
         height: 100%;
       }
       .price-number{
-        // background-color: violet;
         text-align: right;
         padding-right: 10px;
         width: 40%;
@@ -231,7 +224,6 @@ export default {
       }
     }
     .tax{
-      // background-color: skyblue;
       width: 100%;
       height: 20px;
       text-align: left;
@@ -239,7 +231,6 @@ export default {
       padding-left: 10px;
     }
     .cart-btn{
-      // background-color: sienna;
       display: flex;
       align-items: center;
       flex-direction: column;
