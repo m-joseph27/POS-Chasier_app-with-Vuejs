@@ -27,9 +27,8 @@ export default {
 
 <style scoped>
 .sidebar.sidebarActive{
-  visibility: hidden;
-  opacity: 0;
   transition: ease .5s;
+  left: -85px;
 }
 
 .sidebar{
@@ -44,9 +43,8 @@ export default {
   position: fixed;
   z-index: 4;
   top: 0;
+  left: 0;
   transition: ease .5s;
-  visibility: visible;
-  opacity: 1;
 }
 .fork-menu{
   background-image: url('../assets/img/fork.png');

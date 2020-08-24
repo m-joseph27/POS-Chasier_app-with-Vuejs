@@ -24,7 +24,6 @@ export default {
   display: flex;
   visibility: hidden;
   opacity: 0;
-  transition: ease 0.50s;
   background-color: rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100vw;
@@ -48,13 +47,11 @@ export default {
     border: none;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
     .content-head{
-      // background-color: seagreen;
       width: 100%;
       height: 10%;
       padding-left: 15px;
       display: flex;
       align-items: center;
-      // position: fixed;
       h1{
         text-align: left;
         font-family: airbnbmedium;
@@ -62,12 +59,10 @@ export default {
       }
     }
     .content-body{
-      // background-color: coral;
       width: 100%;
       height: 75%;
     }
     .content-footer{
-      // background-color: skyblue;
       width: 100%;
       height: 15%;
       display: flex;
