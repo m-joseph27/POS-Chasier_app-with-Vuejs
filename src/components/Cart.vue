@@ -126,6 +126,7 @@ export default {
       height: 100%;
       img{
         transform: rotate(180deg);
+        cursor: pointer;
       }
     }
     .name-cart{

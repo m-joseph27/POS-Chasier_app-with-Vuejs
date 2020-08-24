@@ -2,9 +2,26 @@
       <div class="modal-parent">
         <div class="modal-content">
           <div class="content-head">
-            <h1>Add Items</h1>
+            <h1>Add Item</h1>
           </div>
-          <div class="content-body"></div>
+          <div class="content-body">
+            <div class="body-label">
+              <label for="nama">Nama</label>
+              <label for="image">Image</label>
+              <label for="price">Price</label>
+              <label for="category">Category</label>
+            </div>
+            <div class="body-input">
+              <input class="name-input" type="text" id="nama">
+              <input class="image-input" type="file" id="image">
+              <input class="price-input" type="text" id="price">
+              <select class="category-input" name="category" id="category">
+                <option value="1">Category</option>
+                <option value="2">Food</option>
+                <option value="3">Drink</option>
+              </select>
+            </div>
+          </div>
           <div class="content-footer">
             <button @click="$emit('close-clicked')" class="cancel">Cancel</button>
             <button class="add">Add</button>
@@ -38,10 +55,10 @@ export default {
   }
   .modal-content{
     width: 600px;
-    height: 500px;
+    height: 400px;
     border-radius: 10px;
-    top: 10%;
-    left: 25%;
+    top: 20%;
+    left: 30%;
     overflow: hidden;
     outline: none;
     border: none;
@@ -52,6 +69,7 @@ export default {
       padding-left: 15px;
       display: flex;
       align-items: center;
+      padding-top: 15px;
       h1{
         text-align: left;
         font-family: airbnbmedium;
@@ -61,6 +79,62 @@ export default {
     .content-body{
       width: 100%;
       height: 75%;
+      display: flex;
+      justify-content: center;
+      line-height: 60px;
+      .body-label{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 17px;
+        font-weight: bold;
+      }
+      .body-input{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        line-height: 50px;
+        input{
+          outline: none;
+          border: 1px solid rgba(0, 0, 0, 0.25);
+          border-radius: 5px;
+          padding-left: 10px;
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+          font-weight: bold;
+          font-size: 14px;
+        }
+        select{
+          outline: none;
+          border: 1px solid rgba(0, 0, 0, 0.25);
+          border-radius: 5px;
+          padding-left: 10px;
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+          font-weight: bold;
+          font-size: 14px;
+        }
+        .name-input{
+          width: 300px;
+          height: 40px;
+          margin: 10px 0;
+        }
+        .image-input{
+          margin: 10px 0;
+          padding-left: 0;
+        }
+        .price-input{
+          width: 300px;
+          height: 40px;
+          margin: 10px 0;
+        }
+        .category-input{
+          width: 150px;
+          height: 40px;
+          margin: 10px 0;
+        }
+      }
     }
     .content-footer{
       width: 100%;
