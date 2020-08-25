@@ -149,9 +149,15 @@ export default {
         width: 120px;
         height: 40px;
         font-family: airbnbmedium;
-        border-radius: 3px;
+        border-radius: 5px;
         margin: 0 10px;
         color: white;
+        font-weight: bold;
+        font-size: 15px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+        &:active{
+          transform: translateY(1px);
+        }
       }
       .cancel{
         border: none;

@@ -57,6 +57,9 @@ export default {
     width: 50px;
     height: 100%;
     cursor: pointer;
+    &:active{
+      transform: translateY(1px);
+    }
   }
   .nav-name{
     width: 400px;
@@ -96,7 +99,7 @@ export default {
         }
       }
       &:active{
-        transform: translateY(2px);
+        transform: translateY(1px);
       }
     }
   }

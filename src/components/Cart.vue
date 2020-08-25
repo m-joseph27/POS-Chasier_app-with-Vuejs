@@ -127,6 +127,9 @@ export default {
       img{
         transform: rotate(180deg);
         cursor: pointer;
+        &:active{
+          transform: translateY(1px);
+        }
       }
     }
     .name-cart{

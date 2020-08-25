@@ -10,7 +10,7 @@
         <p>{{ menu.menu_name }}</p>
       </div>
       <div class="card-price">
-        <p>{{ menu.price }}</p>
+        <p>Rp: <span>{{ menu.price }}</span></p>
       </div>
     </div>
   </div>

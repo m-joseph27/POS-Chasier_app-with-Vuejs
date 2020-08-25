@@ -46,6 +46,7 @@ export default {
   left: 0;
   transition: ease .5s;
 }
+
 .fork-menu{
   background-image: url('../assets/img/fork.png');
   background-size: contain;
@@ -56,6 +57,11 @@ export default {
   cursor: pointer;
   margin-bottom: 25px;
 }
+
+.fork-menu:active{
+  transform: translateY(1px);
+}
+
 .history{
   background-image: url('../assets/img/clipboard.png');
   background-size: contain;
@@ -66,6 +72,11 @@ export default {
   margin-bottom: 25px;
   cursor: pointer;
 }
+
+.history:active{
+  transform: translateY(2px);
+}
+
 .add{
   background-image: url('../assets/img/add.png');
   background-size: contain;
@@ -75,10 +86,20 @@ export default {
   height: 60px;
   cursor: pointer;
 }
+
+.add:active{
+  transform: translateY(2px);
+}
+
 .exit{
   width: 40px;
   height: 60px;
-  margin-top: 240px;
+  margin-top: 290px;
   transform: rotate(180deg);
 }
+
+.exit:active{
+  transform: translateY(2px);
+}
+
 </style>
