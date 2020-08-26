@@ -56,6 +56,7 @@ export default {
   padding-left:180px;
   padding-top: 80px;
   padding-bottom: 30px;
+  display: flex;
   .all-card{
     display: flex;
     flex-wrap: wrap;
