@@ -32,6 +32,15 @@
 
 <script>
 export default {
+  name: 'Modal',
+  data() {
+    return {
+      nameMenu: '',
+      priceMenu: '',
+      imageMenu: '',
+      categoryMenu: '',
+    };
+  },
 };
 </script>
 

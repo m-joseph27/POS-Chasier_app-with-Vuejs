@@ -73,7 +73,6 @@ export default {
       transition: ease .2s;
     }
     .card-image{
-      background-color: salmon;
       background-size: cover;
       background-position: center;
       width: 100%;

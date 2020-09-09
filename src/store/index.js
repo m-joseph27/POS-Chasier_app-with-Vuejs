@@ -9,6 +9,7 @@ export default new Vuex.Store({
     menu: [],
     selectedItem: [],
     total: 0,
+    message: '',
   },
 
   mutations: {
@@ -38,6 +39,9 @@ export default new Vuex.Store({
         }
       }
     },
+    MSG(state, error) {
+      state.message = error;
+    },
   },
 
   actions: {
@@ -48,6 +52,20 @@ export default new Vuex.Store({
           context.commit('MENU', res.data.result);
         });
     },
+  },
+  ADDPRODUCT(context, data) {
+    // eslint-disable-next-line no-unused-vars
+    return new Promise((resolve, reject) => {
+      axios
+        .post(`${process.env.VUE_APP_URL}menu`, data)
+        .then((res) => {
+          resolve(res);
+        })
+        .catch((error) => {
+          console.log(error);
+          context.commit('MSG', error.response.data.err);
+        });
+    });
   },
 
   getters: {
